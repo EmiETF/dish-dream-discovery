@@ -62,6 +62,11 @@ const Dishes = () => {
                 slug={dish.slug}
                 imageUrl={dish.imageUrl}
                 description={dish.description}
+                craveRank={5}
+                culinaryCred={4}
+                buzz={4}
+                priceRange="$$"
+                location="Various Locations"
               />
             ))}
           </div>
@@ -80,8 +85,11 @@ const Dishes = () => {
                   slug={dish.slug}
                   imageUrl={dish.imageUrl}
                   description={dish.description}
-                  showCategory={true}
-                  category={dish.category}
+                  craveRank={4}
+                  culinaryCred={3}
+                  buzz={3}
+                  priceRange="$$$"
+                  location="Top Restaurants"
                 />
               ))}
             </div>

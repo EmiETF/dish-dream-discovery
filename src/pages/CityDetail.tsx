@@ -88,8 +88,11 @@ const CityDetail = () => {
                 slug={dish.slug}
                 imageUrl={dish.imageUrl}
                 description={dish.description}
-                category={dish.category}
-                showCategory={true}
+                craveRank={4}
+                culinaryCred={3}
+                buzz={4}
+                priceRange="$$$"
+                location={city.name}
               />
             ))}
           </div>

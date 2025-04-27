@@ -43,8 +43,11 @@ const SearchResults = () => {
                   slug={dish.slug}
                   imageUrl={dish.imageUrl}
                   description={dish.description}
-                  category={dish.category}
-                  showCategory={true}
+                  craveRank={4}
+                  culinaryCred={4}
+                  buzz={3}
+                  priceRange="$$"
+                  location="Search Results"
                 />
               ))}
             </div>
