@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -75,7 +74,7 @@ const Home = () => {
                       imageUrl={category === 'Deli Sandwich' 
                         ? "/lovable-uploads/e42ff8c3-8231-4339-aaee-786508123131.png"
                         : (category === 'Bagel' 
-                          ? "/lovable-uploads/96504c4c-1050-4c69-acf5-c6c84099bf52.png"
+                          ? "/lovable-uploads/0946b569-755c-4052-b6d7-59ed8ecaa768.png"
                           : "/lovable-uploads/6e084c17-0ee1-4e98-bcb4-f554e25c98d4.png")}
                       description={`The best ${category.toLowerCase()} in town`}
                       craveRank={4}
