@@ -1,3 +1,4 @@
+
 export interface City {
   id: string;
   name: string;
@@ -51,7 +52,6 @@ export interface RestaurantDish {
   description: string;
   imageUrl: string;
   tags: string[];
-  location?: string;
 }
 
 export interface Review {
