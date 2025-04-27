@@ -9,11 +9,13 @@ interface DishCardProps {
   slug: string;
   imageUrl: string;
   description: string;
-  craveRank: number;
-  culinaryCred: number;
-  buzz: number;
-  priceRange: string;
-  location: string;
+  craveRank?: number;
+  culinaryCred?: number;
+  buzz?: number;
+  priceRange?: string;
+  location?: string;
+  category?: string;
+  showCategory?: boolean;
 }
 
 const DishCard = ({ 
@@ -22,11 +24,13 @@ const DishCard = ({
   slug, 
   imageUrl, 
   description,
-  craveRank,
-  culinaryCred,
-  buzz,
-  priceRange,
-  location
+  craveRank = 3,
+  culinaryCred = 3,
+  buzz = 3,
+  priceRange = "$",
+  location = "Various locations",
+  category,
+  showCategory = false
 }: DishCardProps) => {
   return (
     <Link to={`/dishes/${slug}`} className="block">
@@ -44,6 +48,10 @@ const DishCard = ({
           {/* Right side - Content */}
           <div className="p-4 flex-1">
             <h3 className="text-2xl font-semibold mb-3">{name}</h3>
+            
+            {showCategory && category && (
+              <div className="text-sm text-gray-500 mb-2">{category}</div>
+            )}
             
             {/* Crave Rank */}
             <div className="flex items-center mb-3">
