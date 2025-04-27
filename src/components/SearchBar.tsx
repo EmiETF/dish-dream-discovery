@@ -17,21 +17,20 @@ const SearchBar = ({ placeholder = "Search for dish, city or neighborhood", onSe
     if (onSearch) {
       onSearch(query);
     } else {
-      // Default search behavior - navigate to search results
       navigate(`/search?q=${encodeURIComponent(query)}`);
     }
   };
 
   return (
-    <form onSubmit={handleSearch} className="relative w-full max-w-lg">
+    <form onSubmit={handleSearch} className="relative w-full max-w-2xl">
       <div className="relative">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+        <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={placeholder}
-          className="w-full pl-10 pr-4 py-3 rounded-md bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full pl-12 pr-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm"
         />
       </div>
     </form>
