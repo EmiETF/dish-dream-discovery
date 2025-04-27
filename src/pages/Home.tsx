@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -6,7 +5,6 @@ import SearchBar from '../components/SearchBar';
 import Footer from '../components/Footer';
 import DishCard from '../components/DishCard';
 import { getPopularDishes } from '../data/mockData';
-import { Search } from 'lucide-react';
 
 const Home = () => {
   const popularDishes = getPopularDishes();
@@ -66,7 +64,7 @@ const Home = () => {
                   </Link>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 gap-6">
                   {[1, 2, 3].map((index) => (
                     <DishCard 
                       key={`${category}-${index}`}
@@ -77,6 +75,11 @@ const Home = () => {
                         ? "/lovable-uploads/96504c4c-1050-4c69-acf5-c6c84099bf52.png"
                         : "/lovable-uploads/6e084c17-0ee1-4e98-bcb4-f554e25c98d4.png"}
                       description={`The best ${category.toLowerCase()} in town`}
+                      craveRank={4}
+                      buzzLevel={3}
+                      culinaryCred={4}
+                      priceRange="$$"
+                      location="Manhattan"
                     />
                   ))}
                 </div>
