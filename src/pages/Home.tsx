@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -69,11 +70,13 @@ const Home = () => {
                     <DishCard 
                       key={`${category}-${index}`}
                       id={`${index}`}
-                      name={category === 'Bagel' ? 'Big Apple Bagels' : 'Anchor & James'}
+                      name={category === 'Deli Sandwich' ? 'Classic Deli Sandwich' : (category === 'Bagel' ? 'Big Apple Bagels' : 'Anchor & James')}
                       slug={category.toLowerCase()}
-                      imageUrl={category === 'Bagel' 
-                        ? "/lovable-uploads/96504c4c-1050-4c69-acf5-c6c84099bf52.png"
-                        : "/lovable-uploads/6e084c17-0ee1-4e98-bcb4-f554e25c98d4.png"}
+                      imageUrl={category === 'Deli Sandwich' 
+                        ? "/lovable-uploads/e42ff8c3-8231-4339-aaee-786508123131.png"
+                        : (category === 'Bagel' 
+                          ? "/lovable-uploads/96504c4c-1050-4c69-acf5-c6c84099bf52.png"
+                          : "/lovable-uploads/6e084c17-0ee1-4e98-bcb4-f554e25c98d4.png")}
                       description={`The best ${category.toLowerCase()} in town`}
                       craveRank={4}
                       buzzLevel={3}
