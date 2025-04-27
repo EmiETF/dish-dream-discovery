@@ -77,6 +77,11 @@ const Home = () => {
                         ? "/lovable-uploads/96504c4c-1050-4c69-acf5-c6c84099bf52.png"
                         : "/lovable-uploads/6e084c17-0ee1-4e98-bcb4-f554e25c98d4.png"}
                       description={`The best ${category.toLowerCase()} in town`}
+                      craveRank={5}
+                      culinaryCred={5}
+                      buzz={5}
+                      priceRange="$$"
+                      location="Manhattan"
                     />
                   ))}
                 </div>
