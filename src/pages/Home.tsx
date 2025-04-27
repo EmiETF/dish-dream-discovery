@@ -72,7 +72,7 @@ const Home = () => {
                       name={category === 'Bagel' ? 'Big Apple Bagels' : 'Anchor & James'}
                       slug={category.toLowerCase()}
                       imageUrl={category === 'Bagel' 
-                        ? "/lovable-uploads/96504c4c-1050-4c69-acf5-c6c84099bf52.png"
+                        ? "/lovable-uploads/80b855fa-e3c2-4dbb-85a9-37fb585ae594.png"
                         : "/lovable-uploads/6e084c17-0ee1-4e98-bcb4-f554e25c98d4.png"}
                       description={`The best ${category.toLowerCase()} in town`}
                       craveRank={4}
